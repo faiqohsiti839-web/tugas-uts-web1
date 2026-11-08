@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informasi Stok | Toko Buku UT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+  <header id="navbar" class="navbar"></header>
+  <main class="container">
+    <h1>Informasi Stok Buku</h1>
+    <section class="panel">
+      <div class="table-wrap">
+        <table id="tabelStok">
+          <thead><tr><th>Cover</th><th>Kode</th><th>Nama Buku</th><th>Jenis</th><th>Edisi</th><th>Stok</th><th>Harga</th><th>Aksi</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Tambah stok baru</h2>
+      <form id="formStok" class="grid-form" novalidate>
+        <div><label for="kode">Kode barang</label><input id="kode" required></div>
+        <div><label for="nama">Nama barang</label><input id="nama" required></div>
+        <div><label for="jenis">Jenis</label><input id="jenis" value="Buku Ajar" required></div>
+        <div><label for="edisi">Edisi</label><input id="edisi" type="number" min="1" required></div>
+        <div><label for="stok">Stok</label><input id="stok" type="number" min="0" required></div>
+        <div><label for="harga">Harga (Rp)</label><input id="harga" type="number" min="0" required></div>
+        <button type="submit" class="btn">Tambah ke tabel</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><p>UTS Pemrograman Web 1 &ndash; Toko Buku UT</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

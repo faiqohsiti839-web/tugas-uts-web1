@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemesanan | Toko Buku UT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header id="navbar" class="navbar"></header>
+  <main class="container">
+    <h1>Pemesanan</h1>
+    <section class="panel">
+      <h2>Keranjang</h2>
+      <div class="table-wrap">
+        <table id="tabelKeranjang">
+          <thead><tr><th>Buku</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="total">Total: <strong id="total">Rp 0</strong></p>
+    </section>
+    <section class="panel">
+      <h2>Data pemesan dan pembayaran</h2>
+      <form id="formCheckout" class="grid-form" novalidate>
+        <div><label for="cNama">Nama pemesan</label><input id="cNama" required></div>
+        <div><label for="cEmail">Email</label><input id="cEmail" type="email" required></div>
+        <div><label for="cTelp">No. telepon</label><input id="cTelp" inputmode="numeric" required></div>
+        <div><label for="cMetode">Metode pembayaran</label>
+          <select id="cMetode" required>
+            <option value="">Pilih metode</option>
+            <option>Transfer Bank</option>
+            <option>Virtual Account</option>
+            <option>E-Wallet</option>
+          </select></div>
+        <div class="full"><label for="cAlamat">Alamat pengiriman</label><textarea id="cAlamat" rows="3" required></textarea></div>
+        <button type="submit" class="btn">Buat pesanan</button>
+      </form>
+    </section>
+    <section class="panel" id="riwayat">
+      <h2>Laporan pemesanan dan history transaksi</h2>
+      <div class="table-wrap">
+        <table id="tabelRiwayat">
+          <thead><tr><th>No. DO</th><th>Tanggal</th><th>Pemesan</th><th>Item</th><th>Total</th><th>Pembayaran</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><p>UTS Pemrograman Web 1 &ndash; Toko Buku UT</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

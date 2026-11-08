@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tracking Pengiriman | Toko Buku UT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tracking">
+  <header id="navbar" class="navbar"></header>
+  <main class="container">
+    <h1>Informasi Pengiriman</h1>
+    <section class="panel">
+      <form id="formCari" class="inline-form" novalidate>
+        <label for="nomorDO">Nomor Delivery Order</label>
+        <input id="nomorDO" placeholder="contoh: 20230012" required>
+        <button type="submit" class="btn">Cari</button>
+      </form>
+    </section>
+    <section id="hasil" class="panel" hidden></section>
+  </main>
+  <footer class="footer"><p>UTS Pemrograman Web 1 &ndash; Toko Buku UT</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
